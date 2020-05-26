@@ -1,9 +1,24 @@
 <div>
   <h1>Try AG Grid Examples</h1>
 </div>
+
+
+<div>
+  <h3>Grouping Table</h3>
+  <button (click)="getSelectedRows2()">Get Selected Rows</button>
+  <ag-grid-angular #agGrid2 style="width: 100%; height: 500px;" class="ag-theme-alpine" [rowData]="rowData2 | async"
+    [columnDefs]="columnDefs2" rowSelection="multiple" [autoGroupColumnDef]="autoGroupColumnDef"></ag-grid-angular>
+</div>
+
+
+
+
+
+
+
 <div>
   <h3>Simple Table</h3>
-  <button (click)="getSelectedRows()">Get Selected Rows</button>
-  <ag-grid-angular #agGrid style="width: 500px; height: 500px;" class="ag-theme-alpine" [rowData]="rowData | async"
-    [columnDefs]="columnDefs" rowSelection="multiple"></ag-grid-angular>
+  <button (click)="getSelectedRows1()">Get Selected Rows</button>
+  <ag-grid-angular #agGrid style="width: 100%; height: 500px;" class="ag-theme-alpine" [rowData]="rowData1 | async"
+    [columnDefs]="columnDefs1" rowSelection="multiple"></ag-grid-angular>
 </div>
